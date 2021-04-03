@@ -1,0 +1,55 @@
+.services {
+    background: $dark-grey;
+    padding: 80px 0;
+
+    &__inner {
+
+        @include mq("tablet-small") {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__service {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0 20px;
+
+        @include mq("tablet-small") {
+            width: calc(100%/2 - 10px);
+            padding: 0;
+        }
+
+        @include mq("bootstrap-lg") {
+            width: calc(100%/4 - 10px);
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        svg {
+            width: 40px;
+            fill: $color-primary;
+            width: 40px;
+            height: 40px;
+        }
+
+
+    }
+
+    &__title {
+        letter-spacing: $mainSpacing;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin: 30px 0;
+        font-size: 18px;
+
+    }
+
+    &__desc {
+        font-size: 16px;
+    }
+}

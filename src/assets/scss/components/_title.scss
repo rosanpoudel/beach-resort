@@ -1,0 +1,21 @@
+.section-title {
+    position: relative;
+    font-size: 32px;
+    letter-spacing: $mainSpacing;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 70px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 5px;
+        background: $color-primary;
+    }
+}

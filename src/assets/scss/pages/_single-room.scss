@@ -1,0 +1,69 @@
+.room-details {
+    margin-top: 50px;
+
+    @include mq("tablet") {
+        margin-top: 80px;
+
+    }
+
+    .details {
+        margin-bottom: 40px;
+    }
+
+    .sub-titles {
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        letter-spacing: $mainSpacing;
+        font-size: 24px;
+        font-weight: bold;
+        color: #222222;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.8;
+        text-align: justify;
+
+        @include mq("bootstrap-lg") {
+            padding-right: 5%;
+            text-align: left;
+
+
+        }
+    }
+
+    .info-txt {
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 25px;
+    }
+
+    .extras {
+        .sub-titles {
+            font-size: 18px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+                margin-bottom: 20px;
+
+
+                @include mq("bootstrap-lg") {
+                    width: calc(30%);
+
+                }
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,63 @@
+.mainHero,
+.roomsHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHero {
+    background: url("../images/defaultBcg.jpeg") 50%/cover no-repeat;
+    height: calc(100vh - 72px);
+
+}
+
+.roomsHero {
+    background: url("../images/room-2.jpeg") 50%/cover no-repeat;
+    height: 75vh;
+}
+
+// banner
+.banner {
+    display: inline-block;
+    background: rgba(0, 0, 0, .5);
+    color: $color-white;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: $mainSpacing;
+    padding: 20px;
+
+    @media only screen and (min-width: 472px) {
+        padding: 30px 60px;
+    }
+
+    @include mq("tablet") {
+        padding: 50px 100px;
+
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: bold;
+
+        @include mq("bootstrap-lg") {
+            font-size: 64px;
+
+        }
+    }
+
+    &__underline {
+        width: 160px;
+        height: 5px;
+        background: #af9a7d;
+        background: $color-primary;
+        margin: 25px auto;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+
+        @include mq("bootstrap-lg") {
+            font-size: 19px;
+        }
+    }
+}

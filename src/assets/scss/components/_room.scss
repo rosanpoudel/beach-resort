@@ -1,0 +1,105 @@
+.room {
+    position: relative;
+    box-shadow: $lightShadow;
+    transition: $mainTransition;
+
+    &:hover {
+        box-shadow: $darkShadow;
+
+    }
+
+
+    .room-img {
+        position: relative;
+        transition: $mainTransition;
+
+
+        img {
+            display: block;
+        }
+
+        .room-link {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 30%;
+            transform: translateXY(-50%);
+            opacity: 0;
+        }
+
+        .room-price {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $color-black;
+            padding: 10px 15px;
+            border-radius: 0 0 20px 0;
+
+            span,
+            small {
+                display: block;
+                text-align: center;
+                color: $color-white;
+
+            }
+
+            span {
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: $mainSpacing;
+            }
+
+            small {
+                font-size: 8px;
+            }
+        }
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.8);
+
+
+            img {
+                opacity: .3;
+            }
+
+            .room-link {
+                opacity: 1;
+            }
+
+            .room-price {
+                opacity: 0;
+            }
+        }
+
+    }
+
+    .room-title {
+        text-align: center;
+        background: $dark-grey;
+        text-transform: capitalize;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 3px;
+        letter-spacing: $mainSpacing;
+    }
+
+
+
+
+
+}
+
+// rooms page
+.rooms-wrapper {
+    margin-top: 60px;
+
+    @include mq("bootstrap-lg") {
+        margin-top: 80px;
+
+    }
+
+    .room {
+        margin-bottom: 30px;
+    }
+}

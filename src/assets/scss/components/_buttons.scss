@@ -1,0 +1,19 @@
+.site-btn {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: $mainSpacing;
+    color: $color-black;
+    background: $color-primary;
+    padding: .4rem .9rem;
+    border: 3px solid $color-primary;
+    transition: $mainTransition;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 25px;
+
+    &:hover {
+        background: transparent;
+        color: #af9a7d;
+        text-decoration: none;
+    }
+}
